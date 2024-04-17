@@ -34,7 +34,7 @@ In Solidity code, it allows you to use functions that accepts or returns structs
 
   =>import "./Math.sol";
 
-Math.sol also imported  "./BalancerErrors.sol" 
+       imported  "./BalancerErrors.sol" 
 
 abs(int256 a):
 
@@ -116,6 +116,7 @@ In summary,this library provides accurate mathematical functions for working wit
 
 
 =>import "./InputHelpers.sol"; Below are it's imports:
+
     import "./IERC20.sol";
     import "./BalancerErrors.sol";
 
@@ -131,6 +132,7 @@ The _require function is used for error handling and reverting transactions if c
 Overall, this library provides useful functions for ensuring input data integrity, particularly for sorting arrays and checking input lengths. It also demonstrates the usage of error handling in Solidity contracts.
 
 >import "./ScalingHelpers.sol"; Scaling.sol has the following imports below:
+
          >import "./FixedPoint.sol";
          >import "./Math.sol";
          >import "./ERC20.sol";
@@ -154,6 +156,7 @@ Overall, this code segment is part of a larger system that manages token balance
 
 
 =>import "./BasePoolMath.sol"; Below is the import:
+
       import "./FixedPoint.sol";
    
 using FixedPoint for uint256;: Enables using the fixed-point arithmetic functions defined in the FixedPoint library on uint256 variables within this library.
@@ -176,12 +179,12 @@ In summary, this library provides essential functions for performing proportiona
 =>import "./PoolRegistrationLib.sol";
 
          =>Pool registration imports Ivault Which Also Have Imports:
+
                     import "./IERC20.sol";
                     import "./IAuthentication.sol";
                     import "./ISignaturesValidator.sol";
                     import "./ITemporarilyPausable.sol";
                     import "./IWETH.sol";
-
                     import "./IAsset.sol";
                     import "./IAuthorizer.sol";
                     import "./IFlashLoanRecipient.sol";
@@ -241,7 +244,9 @@ The contract defines custom error messages and uses _revert and _require functio
 
 
   =>LiquidityBootstrappingPool
+
 The contract imports various other Solidity file :
+
                     import "./WeightedPoolUserData.sol";
                     import "./Math.sol";
                     import "./ScalingHelpers.sol";
@@ -289,6 +294,7 @@ They call functions from WeightedJoinsLib and WeightedExitsLib to perform specif
 CONTRACT INTERFACES
 
 import "./IProtocolFeesCollector.sol";
+
 This interface defines the structure and functionality for managing protocol fees, including setting and retrieving fee percentages, withdrawing fees, and interacting with related contracts such as the authorizer and vault
 
 import "./ITemporarilyPausable.sol";
@@ -358,6 +364,7 @@ This library provides a structured approach to managing storage and operations r
 =>import "./lib/WeightedJoinsLib.sol";
 
 The library imports several other Solidity files: 
+
                     import "./WeightedPoolUserData.sol";
                     import "./BasePoolMath.sol";
                     import "./ScalingHelpers.sol";
@@ -381,6 +388,7 @@ BasePoolMath and WeightedMath: Utilizes mathematical functions from these librar
 =>import "./lib/WeightedExitsLib.sol
         
 The library imports several other Solidity files:
+
                     import "./WeightedPoolUserData.sol";
                     import "./BasePoolMath.sol";
                     import "./ScalingHelpers.sol";
